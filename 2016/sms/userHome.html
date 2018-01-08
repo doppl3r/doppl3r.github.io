@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>User.Name</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
+    <link href="css/custom-navbar.css" rel="stylesheet" media="screen">
+    <link href="css/global.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen"/>
+      
+  </head>
+  <body class="noscroll">
+    <!--top nav bar-->
+    <div class="header">
+      <div class="container">
+        <div class="navbar navbar-default navbar-top" role="navigation">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <div>
+            <a class="navbar-brand white" href="#"><span class="glyphicon glyphicon-user"></span>
+              <span id="userName">UserName</span>
+            </a>
+            </div>
+          </div>
+          <div class="navbar-collapse collapse">
+            <div class="row">
+              <div class="col-xs-6">
+                <form class="navbar-form navbar-right" role="form">
+                  <p>Customize your profile right now!</p>
+                  <div><a class="c-button greenBG wide" href="#"><h2>EDIT ACCOUNT</h2></a></div>
+                  <div><a class="c-button redBG wide" href="index.html"><h2>LOGOUT</h2></a></div>
+                </form>  
+              </div>
+              <div class="col-xs-6">
+                <p>If you'd like to learn more about our services, please head on over to our home page.</p>
+                <div><a class="c-button blueBG" href="index.html"><h2>HOME</h2></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--modules will be implemented here-->
+    <div class="content">
+       <div class="container">
+        <div class="colorDiv redBG">
+          <img src="img/logo.png"/>
+          <div class="colorDiv-body">
+            <p>
+              BearSpark supports a wide range of modules designed to help you keep track of everything. Be sure to use each one of these to your advantage!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="panel-group" id="accordion1">
+          <!--GROUPS tab-->
+          <div class="panel colorDiv blueBG">
+            <div class="panel-heading">
+              <a data-toggle="collapse" data-parent="#accordion1" href="#collapseOne">
+                <span class="glyphicon glyphicon-sort panel-button"></span>
+              </a>
+              <span class="c-badge pull-left">3 <img src="img/1.png"/></span>
+              <h2 class="panel-title">GROUPS</h2>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse"> <!--tag 'in' to open-->
+              <div class="panel-body">
+                <div class="colorDiv-body">
+                  <!--Inner Accordian 'Create tab-->
+                  <div class="panel-group kill-margin" id="accordion1.1">
+                    <div class="panel colorDiv blueBG">
+                      <a data-toggle="collapse" data-parent="#accordion1.1" href="#collapseTen">
+                        <div class="panel-heading">
+                          <h2 class="panel-title center-text"><span class="glyphicon glyphicon-file"></span> CREATE!</h2>
+                        </div>
+                      </a>
+                      <div id="collapseTen" class="panel-collapse collapse"> <!--tag 'in' to open-->
+                        <div class="panel-body">
+                          <div class="colorDiv-body">
+                            <form class="nav-form" role="form">
+                              <input id="createGroup" type="text" placeholder="Group Name" class="form-control">
+                              <textarea id="groupDescription" placeholder="Group Description" class="form-control" rows="3"></textarea>
+                              <div><a class="c-button blueBG wide" href="groupHome.html"><h2>FINISH!</h2></a></div>
+                            </form>  
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--current members-->
+                  <div class="member">
+                    <a class="glyphicon glyphicon-home" href="groupHome.html"></a>
+                    <a class="glyphicon glyphicon-remove pull-right" href="#"></a>
+                    <h2>SampleGroup1</h2>
+                  </div>
+                  <div class="member">
+                    <a class="glyphicon glyphicon-home" href="groupHome.html"></a>
+                    <a class="glyphicon glyphicon-remove pull-right" href="#"></a>
+                    <h2>SampleGroup2</h2>
+                  </div>
+                  <div class="member">
+                    <a class="glyphicon glyphicon-home" href="groupHome.html"></a>
+                    <a class="glyphicon glyphicon-remove pull-right" href="#"></a>
+                    <h2>SampleGroup3</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--ALERTS tab-->
+          <div class="panel colorDiv blueBG">
+            <div class="panel-heading">
+              <a data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo">
+                <span class="glyphicon glyphicon-sort panel-button"></span>
+              </a>
+              <span class="c-badge pull-left">0 <img src="img/2.png"/></span>
+              <h2 class="panel-title">ALERTS</h2>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse"> <!--tag 'in' to open-->
+              <div class="panel-body">
+                <div class="colorDiv-body">
+                  <p>Coming Soon!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--MESSAGES tab-->
+          <div class="panel colorDiv blueBG">
+            <div class="panel-heading">
+              <a data-toggle="collapse" data-parent="#accordion1" href="#collapseThree">
+                <span class="glyphicon glyphicon-sort panel-button"></span>
+              </a>
+              <span class="c-badge pull-left">0 <img src="img/3.png"/></span>
+              <h2 class="panel-title">MESSAGES</h2>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse"> <!--tag 'in' to open-->
+              <div class="panel-body">
+                <div class="colorDiv-body">
+                  <p>Coming Soon!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--TODO tab-->
+          <div class="panel colorDiv blueBG">
+            <div class="panel-heading">
+              <a data-toggle="collapse" data-parent="#accordion1" href="#collapseFour">
+                <span class="glyphicon glyphicon-sort panel-button"></span>
+              </a>
+              <span class="c-badge pull-left">0 <img src="img/4.png"/></span>
+              <h2 class="panel-title">TODO</h2>
+            </div>
+            <div id="collapseFour" class="panel-collapse collapse"> <!--tag 'in' to open-->
+              <div class="panel-body">
+                <div class="colorDiv-body">
+                  <p>Coming Soon!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--SCHEDULE tab-->
+          <div class="panel colorDiv blueBG">
+            <div class="panel-heading">
+              <a data-toggle="collapse" data-parent="#accordion1" href="#collapseFive">
+                <span class="glyphicon glyphicon-sort panel-button"></span>
+              </a>
+              <span class="c-badge pull-left">0 <img src="img/5.png"/></span>
+              <h2 class="panel-title">SCHEDULE</h2>
+            </div>
+            <div id="collapseFive" class="panel-collapse collapse"> <!--tag 'in' to open-->
+              <div class="panel-body">
+                <div class="colorDiv-body">
+                  <p>Coming Soon!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--MEETINGS tab-->
+          <div class="panel colorDiv blueBG">
+            <div class="panel-heading">
+              <a data-toggle="collapse" data-parent="#accordion1" href="#collapseSix">
+                <span class="glyphicon glyphicon-sort panel-button"></span>
+              </a>
+              <span class="c-badge pull-left">3 <img src="img/6.png"/></span>
+              <h2 class="panel-title">MEETINGS</h2>
+            </div>
+            <div id="collapseSix" class="panel-collapse collapse"> <!--tag 'in' to open-->
+              <div class="panel-body">
+                <div class="colorDiv-body">
+                  <!--Only show this if you own the group-->
+                  <div class="panel-group kill-margin" id="accordion6">
+                    <div class="panel colorDiv blueBG">
+                      <a data-toggle="collapse" data-parent="#accordion6" href="#collapse6">
+                        <div class="panel-heading">
+                          <h2 class="panel-title center-text"><span class="glyphicon glyphicon-time"></span> CREATE</h2>
+                        </div>
+                      </a>
+                      <div id="collapse6" class="panel-collapse collapse"> <!--tag 'in' to open-->
+                        <div class="panel-body">
+                          <div class="colorDiv-body">
+                            <form class="nav-form" role="form">
+                              <input id="" type="text" placeholder="Meeting Subject" class="form-control margin-b5">
+                              <textarea id="" placeholder="Meeting Description" class="form-control margin-b5" rows="3"></textarea>
+                              <input id="" type="text" placeholder="Meeting Location" class="form-control margin-b5">
+                              <div class='input-group date' id='datetimepicker'>
+                                  <input placeholder="MM/DD/YYYY 00:00 AM" type='text' class="form-control" />
+                                  <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                              </div>
+                              <div><a class="c-button blueBG wide" href="groupHome.html"><h2>SUBMIT!</h2></a></div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--current groups-->
+                  <div class="member">
+                    <a class="glyphicon glyphicon-time href="#"></a>
+                    <a class="glyphicon glyphicon-remove pull-right" href="#"></a>
+                    <h2>SampleMeeting1</h2>
+                  </div>
+                  <div class="member">
+                    <a class="glyphicon glyphicon-time" href="#"></a>
+                    <a class="glyphicon glyphicon-remove pull-right" href="#"></a>
+                    <h2>SampleMeeting2</h2>
+                  </div>
+                  <div class="member">
+                    <a class="glyphicon glyphicon-time" href="#"></a>
+                    <a class="glyphicon glyphicon-remove pull-right" href="#"></a>
+                    <h2>SampleMeeting3</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--footer-->
+      <div class="container">
+        <footer><p>© BearSpark</p></footer>
+      </div>
+    </div>
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-2.1.0.min.js"></script>
+    <script src="js/moment.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript">$(function (){$('#datetimepicker').datetimepicker();});</script>
+  </body>
+</html>

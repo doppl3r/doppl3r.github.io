@@ -1,0 +1,204 @@
+/*
+ *
+ *To change the collapse button, use
+ *http://getbootstrap.com/customize/
+ *and change the media queries to 768
+ *
+*/
+
+body { 
+  background-color: #191919;
+  background-image: url("../img/bg-small2.jpg");
+}
+.container {
+  max-width: 768px;
+  padding: 0px 12px 0px 12px;
+}
+.colorDiv {
+  border-radius: 5px;
+  border: 1px solid rgba(0,0,0,0.15);
+  background-image: url("../img/lines.png");
+  margin: 0px 0px 12px 0px;
+  padding: 12px;
+}
+.colorDiv-body { background-color: rgba(0,0,0,.25); margin-top: 12px; padding: 12px; border-radius: 5px; }
+.colorDiv p{ color: #FFFFFF; margin: 0px 0px 12px 0px; text-align: justify;  }
+.colorDiv h1 { color: #FFFFFF; margin: 0px; font-weight: bold; font-size: 28px; }
+.colorDiv h2 { color: #FFFFFF; margin: 0px; font-weight: bold; font-size: 18px; line-height: 30px; vertical-align: middle; text-shadow: 0px 2px 1px rgba(0,0,0,0.25); }
+.colorDiv .panel-group .panel, .panel-group .panel+.panel { margin: 0px; }
+.redBG { background-color: rgba(225,50,75, 1.0); }
+.blueBG { background-color: rgba(0,148,255, 1.0); }
+.violetBG { background-color: rgba(180,75,255, 1.0); }
+.greenBG { background-color: rgba(35,200,80, 1.0); }
+.orangeBG { background-color: rgba(255,115,40, 1.0); }
+.yellowBG { background-color: rgba(255,225,25, 1.0); }
+
+.c-button, .c-button:hover {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 1px solid rgba(0,0,0,0.15);
+  background-image: url("../img/lines.png");
+  margin: 5px 0px 0px 0px;
+  padding: 6px;
+}
+.c-button:hover { background-image: url("../img/lines2.png"); }
+.c-button h2 {
+  color: #FFFFFF;
+  margin: 0px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 30px;
+  vertical-align: middle;
+  text-shadow: 0px 2px 1px rgba(0,0,0,0.25);
+}
+.c-badge {
+  color: #FFFFFF;
+  padding: 5px;
+  font-size: 13px;
+  font-weight: bold;
+  background: transparent;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  margin-right: 8px;
+  background-color: rgba(0,0,0,.25);
+  text-shadow: 0px 2px 1px rgba(0,0,0,0.25);
+}
+
+.c-group, .c-group:hover {
+  border: 5px solid transparent;
+  border-radius: 5px;
+  background-color: rgba(0,0,0,0.15);
+  background-image: none;
+  text-align: left;
+  padding: 0px 6px;
+} .c-group:hover { border: 5px solid rgba(0,0,0,0.15); background-color: transparent; }
+
+.wide, .wide:hover { display: block; }
+.kill-margin, .kill-margin:hover { margin: 0px; }
+.kill-padding { padding: 0px; }
+.inline-block { display: inline-block; }
+.center-text { text-align: center; }
+
+.newsBox {
+  border-radius: 5px;
+  /*border: 1px solid rgba(0,0,0,0.15);*/
+  box-shadow: 0px 1px 0px rgba(0,0,0,0.1);
+  background-color: #FFF;
+  margin: 0px 0px 12px 0px;
+  padding: 12px;
+  /*border-radius: 5px;*/
+  color: #777;
+}
+.newsBox > img { width: 36px; height: auto; vertical-align: top; }
+.newsBox > span {
+  font-weight: bolder;
+  font-size: 28px;
+  color: #333;
+}
+.newsBox form {
+  text-align: center;
+  clear: both;
+  border: none;
+  margin: 0px;
+  padding: 0px;
+}
+.newsBox h1 { margin: 0px; text-align: left;}
+.newsBox p { margin: 6px 0px 0px 0px; text-align: justify; }
+.social-div {
+  margin: 0px 0px 12px 0px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: bolder;
+  text-align: center;
+}
+.social-div a{ color:#FFFFFF; }
+.social-options { padding: 12px 0px; vertical-align: middle; }
+.social-options:hover {
+  color: #333;
+  background-color: #FFF;
+}
+.sign-up-facebook{ background-color: #3B5998; }
+.sign-up-google{ background-color: #DD4B39; }
+.sign-up-twitter{ background-color: #4099FF; }
+.sign-up-github{ background-color: #2D2D2D; }
+.panel-heading {
+  padding: 0px;
+  border-radius: 0px;
+  background: transparent;
+  background-color: transparent;
+}
+.panel-heading img:first-of-type { display: inline-block; vertical-align: top; margin-top: 1px; }
+.panel a:hover { text-decoration: none; }
+.panel-body { padding: 0px 0px 0px 0px; }
+.panel-group .panel, .panel-group .panel+.panel { margin:0px 0px 12px 0px; }
+.panel-group .panel-heading+.panel-collapse .panel-body{border: none; border-radius: 0px; }
+.panel-group .panel{ border-radius:5px; }
+.panel-button {
+  padding: 7px;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-shadow: 0px 2px 1px rgba(0,0,0,0.25);
+  background-color: rgba(0,0,0,.25);
+  border: 1px solid transparent;
+  border-radius: 5px;
+  float: right;
+  top: 0px;
+}
+
+.panel-button a, .panel-button:hover { background-color: rgba(255,255,255,.25); text-decoration: none; }
+#createGroup { margin-bottom: 5px; }
+.margin-b5 { margin-bottom: 5px; }
+
+/*MEMBERS*/
+.member, .meeting {
+  margin: 5px 0px 0px 0px;
+  padding: 6px;
+  border: 5px solid transparent;
+  border-radius: 5px;
+  background-color: rgba(0,0,0,0.15);
+  background-image: none;
+  text-align: left;
+}
+.member h2, .meeting h2 { font-size: 14px; margin-left: 10px; }
+.member .glyphicon, .meeting h2 {
+  float: left;
+  margin: 0px 4px 0px 0px;
+  padding: 7px;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-shadow: 0px 2px 1px rgba(0,0,0,0.25);
+  border: 1px solid transparent;
+  border-radius: 5px;
+  top: 0px;
+}
+.member .glyphicon:last-of-type, .meeting .glyphicon:last-of-type { margin: 0px; }
+.member .glyphicon:hover, .meeting .glyphicon:last-of-type { background-color: rgba(0,0,0,0.25); }
+
+/*bootstrap tweaks*/
+.progress { margin: 0px 0px 5px 0px; }
+
+.break {
+  /*this is that nice line you see breaking up content*/
+  margin: 0px;
+  display: inline-block;
+  width: 100%;
+  height: 0px;
+  border-top: 1px solid #E5E5E5;
+  border-bottom: 1px solid #FFF;
+}
+footer p { text-align: center; color: #FFF; }
+
+@media(max-width:768px){ }
+@media(max-width:992px){ }
+@media(min-width:1200px){
+  /*body {
+    background: url("../img/bg10.jpg") no-repeat center center fixed;
+    background-color: #E5E5E5;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }*/
+}
