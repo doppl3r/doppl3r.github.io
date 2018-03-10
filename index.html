@@ -75,6 +75,7 @@
             .bottom-arrow { position: absolute; bottom: 0; left: 0; right: 0; cursor: default; }
             .desktop { visibility: visible; }
             .mobile { visibility: hidden; }
+            .move-up-down { animation: move-up-down 1s ease-in-out infinite; position: absolute; left: 0; bottom: 0; }
 
             @media (max-width: 800px) {
                 a, a:hover { font-size: 24px; margin-top: 48px; padding: 16px 24px; }
@@ -90,6 +91,7 @@
 
             @font-face { font-family: 'GothamHTF-Black'; src: url("fonts/GothamHTF-Black.eot"); src: url("fonts/GothamHTF-Black.eot?#iefix") format("embedded-opentype"), url("fonts/GothamHTF-Black.woff") format("woff"), url("fonts/GothamHTF-Black.ttf") format("truetype"), url("fonts/GothamHTF-Black.svg") format("svg"); }
             @font-face { font-family: 'GothamHTF-Light'; src: url("fonts/GothamHTF-Light.eot"); src: url("fonts/GothamHTF-Light.eot?#iefix") format("embedded-opentype"), url("fonts/GothamHTF-Light.woff") format("woff"), url("fonts/GothamHTF-Light.ttf") format("truetype"), url("fonts/GothamHTF-Light.svg") format("svg"); }
+            @keyframes move-up-down { 0% { bottom: 0; } 50% { bottom: 0.25em; } 100% { bottom: 0; } }
         </style>
     </head>
 	<body>
@@ -98,7 +100,7 @@
                 <hgroup>
                     <h1 id="my-name">jacob debenedetto<br></h1>
                     <p>developer & designer</p>
-                    <i class="material-icons bottom-arrow desktop">keyboard_arrow_down</i>
+                    <i class="material-icons bottom-arrow desktop move-up-down">keyboard_arrow_down</i>
                 </hgroup>
             </article>
         </section>
