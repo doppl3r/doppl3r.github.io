@@ -70,6 +70,9 @@
             .thumbnails div { background-color: #ffffff; border-radius: 3px; box-shadow: 0 2px 1px rgba(0, 0, 0, 0.05); box-sizing: border-box; display: inline-block; margin: 12px; width: 20%; padding: 12px; }
             .thumbnails div .desc { display: none; }
             .thumbnails img { display: block; height: auto; max-width: 100%; }
+            .bottom-arrow { position: absolute; bottom: 0; left: 0; right: 0; cursor: default; }
+            .desktop { visibility: visible; }
+            .mobile { visibility: hidden; }
 
             @media (max-width: 800px) {
                 a, a:hover { font-size: 24px; margin-top: 48px; padding: 16px 24px; }
@@ -77,6 +80,8 @@
                 .one-half { width: 100%; margin: 0 0 24px; }
                 .one-third { width: 100%; margin: 0 0 24px; }
                 .thumbnails div, .thumbnails div:hover { width: 45%; padding: 6px; margin: 6px; } 
+                .desktop { visibility: hidden; }
+                .mobile { visibility: visible; }
             }
 
             @font-face { font-family: 'GothamHTF-Black'; src: url("fonts/GothamHTF-Black.eot"); src: url("fonts/GothamHTF-Black.eot?#iefix") format("embedded-opentype"), url("fonts/GothamHTF-Black.woff") format("woff"), url("fonts/GothamHTF-Black.ttf") format("truetype"), url("fonts/GothamHTF-Black.svg") format("svg"); }
@@ -89,7 +94,8 @@
                 <hgroup>
                     <h1 id="my-name">jacob debenedetto<br></h1>
                     <p>developer & designer</p>
-                    <a id="explore-button" href="#learn"><i class="material-icons">arrow_downward</i> explore</a>
+                    <i class="material-icons bottom-arrow desktop">keyboard_arrow_down</i>
+                    <i class="material-icons bottom-arrow mobile">fingerprint</i>
                 </hgroup>
             </article>
         </section>
