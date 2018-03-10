@@ -55,6 +55,8 @@
             form { max-width: 480px; margin: 0 auto 48px; }
             form input { border: none; border-radius: 3px; box-shadow: 0 2px 1px rgba(0, 0, 0, 0.05); box-sizing: border-box; font-family: 'GothamHTF-Light'; font-size: 18px; margin: 24px 0 0; outline: none; padding: 24px; width: 100%; }
             form button { font-size: 18px; margin: 24px 0 0; width: 100%; }
+            amp-img { outline: none; cursor: pointer; }
+            amp-image-lightbox { background-color: rgba(0,0,0,0.25); }
             .style-one { background-color: #1290bf; color: #f2f2f2; }
             .style-one a { background-color: #f2f2f2; color: #1290bf; }
             .style-two { background-color: #f2f2f2; color: #1290bf; }
@@ -77,6 +79,8 @@
             @media (max-width: 800px) {
                 a, a:hover { font-size: 24px; margin-top: 48px; padding: 16px 24px; }
                 h1 { font-size: 36px; }
+                section { min-height: initial; height: initial; }
+                section:last-of-type { height: 100vh; }
                 .one-half { width: 100%; margin: 0 0 24px; }
                 .one-third { width: 100%; margin: 0 0 24px; }
                 .thumbnails div, .thumbnails div:hover { width: 45%; padding: 6px; margin: 6px; } 
@@ -95,7 +99,6 @@
                     <h1 id="my-name">jacob debenedetto<br></h1>
                     <p>developer & designer</p>
                     <i class="material-icons bottom-arrow desktop">keyboard_arrow_down</i>
-                    <i class="material-icons bottom-arrow mobile">fingerprint</i>
                 </hgroup>
             </article>
         </section>
