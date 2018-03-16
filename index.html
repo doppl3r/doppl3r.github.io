@@ -79,6 +79,8 @@
             .move-up-down { animation: move-up-down 1s ease-in-out infinite; position: absolute; left: 0; bottom: 0; }
 
             @media (max-width: 800px) {
+                p > a, p > a:hover { display: block; margin-top: 16px; }
+                p > a + br { display: none; }
                 a, a:hover { font-size: 24px; margin-top: 48px; padding: 16px 24px; }
                 h1 { font-size: 36px; }
                 section { min-height: initial; height: 75vh; }
@@ -102,7 +104,6 @@
                     <h1 id="my-name">jacob debenedetto<br></h1>
                     <p>developer & designer</p>
                     <i class="material-icons bottom-arrow desktop move-up-down">arrow_downward</i>
-                    <i class="material-icons bottom-arrow mobile move-up-down">fingerprint</i>
                 </hgroup>
             </article>
         </section>
@@ -150,7 +151,7 @@
         <section class="fullscreen style-two">
             <article>
                 <hgroup>
-                    <h1>client history</h1>
+                    <h1>favorite clients</h1>
                     <p class="one-third">
                         <a target="_blank" href="https://www.coldstonecreamery.com/">Cold Stone Creamery</a><br>
                         <a target="_blank" href="https://www.pinkberry.com/">Pinkberry</a><br>
