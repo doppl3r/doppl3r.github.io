@@ -17,7 +17,7 @@
                 <hgroup>
                     <img class="dbacks-logo" src="img/arizona-diamondbacks-logo.png" />
                     <p><em>Dear AZ county,</em></p>
-                    <p>Please please please please please please please please please please please please please please please please please please please please please please please please please please please please do whatever it takes to keep the DBacks in Arizona!!!</p>
+                    <p>Please do whatever it takes to keep the DBacks in Arizona!</p>
                     <p>Sincerely,</p>
                     <p><em id="name">Your DBacks fan</em></p>
                     <p class="bottom"><a class="btn" onclick="editUrl()">edit</a> your name and email this link to <a id="email" class="link" href="mailto:stadiumcomments@mail.maricopa.gov">stadiumcomments@mail.maricopa.gov</a></p>
@@ -29,18 +29,21 @@
 		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 		<script>
             $(document).ready(function(){
-                fullscreen(null); 
-                
                 var url = window.location.href;
                 var name = getParameterByName('name', url);
                 if (name == null) name = $('#name').html();
                 $('#name').html(name);
+                $('body').fadeIn(1000);
                 //$('#email').attr("href", "mailto:stadiumcomments@mail.maricopa.gov&subject=Request to Keep DBacks in AZ&body=Please help us keep the DBacks in AZ!%0D%0A%0D%0ALink: "+url.replace('?','%3F')+"%0D%0A%0D%0ASincerly,%0D%0A"+name);
             });
-            function fullscreen(name) {
-                $(name).addClass('fullscreen');
-                $('.fullscreen').css({ "min-height": $(window).height() });
-                $('body').fadeIn(1000);
+            function editUrl(){
+                var url = window.location.href;
+                var cleanUrl = url.substring(0, url.indexOf('?'));
+                var name = getParameterByName('name', url);
+                if (name == null) name = $('#name').html();
+                var newName = window.prompt("Name:", name);
+                newName = newName != null ? newName : name;
+                location.replace(cleanUrl + "?name=" + newName); 
             }
             function getParameterByName(name, url) {
                 if (!url) url = window.location.href;
@@ -51,17 +54,6 @@
                 if (!results[2]) return '';
                 return decodeURIComponent(results[2].replace(/\+/g, " "));
             }
-            function editUrl(){
-                var url = window.location.href;
-                var cleanUrl = url.substring(0, url.indexOf('?'));
-                var name = getParameterByName('name', url);
-                if (name == null) name = $('#name').html();
-                var newName = window.prompt("Name:", name);
-                newName = newName != null ? newName : name;
-                location.replace(cleanUrl + "?name=" + newName); 
-            }
-            var $resize = $(window).resize(function () { fullscreen(null); }); //Listen to Window Resize
-            $('[href*="#"]').click(function () { var href = $.attr(this, 'href'); $('html, body').animate({ scrollTop: $(href).offset().top }, 500, function () {}); return false;});
 		</script>
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

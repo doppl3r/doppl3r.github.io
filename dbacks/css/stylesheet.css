@@ -5,6 +5,7 @@ section {
   box-sizing: border-box;
   display: table;
   min-height: 640px;
+  height: 100vh;
   overflow-x: hidden;
   padding: 128px 5%;
   position: relative;
@@ -209,6 +210,8 @@ form {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); }
 
 @media (max-width: 800px) {
+  section {
+    padding: 5% 5% 128px; }
   a, a:hover {
     font-size: 24px;
     margin-top: 48px;
