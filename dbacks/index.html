@@ -40,7 +40,7 @@
                 var name = getParameterByName('name', url);
                 if (name == null) name = $('#name').html();
                 $('#name').html(name);
-                $('#email').attr("href", "mailto:stadiumcomments@mail.maricopa.gov&subject=Request to Keep DBacks in AZ&body=Please help us keep the DBacks in AZ!%0D%0A%0D%0ALink: "+window.location.href+"%0D%0A%0D%0ASincerly,%0D%0A"+getParameterByName('name', window.location.href));
+                $('#email').attr("href", "mailto:stadiumcomments@mail.maricopa.gov&subject=Request to Keep DBacks in AZ&body=Please help us keep the DBacks in AZ!%0D%0A%0D%0ALink: "+window.location.href+"%0D%0A%0D%0ASincerly,%0D%0A"+name);
             });
             function fullscreen(name) {
                 $(name).addClass('fullscreen');
