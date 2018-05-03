@@ -24,15 +24,15 @@ section {
 
         a, a:hover {
             background-color: transparent;
-            color: #f2f2f2;
+            color: #e3d4ad;
             font-size: inherit;
             
             &.btn {
-                border: 2px solid #f2f2f2;
+                border: 2px solid #e3d4ad;
                 padding: 0 12px;
             }
             &.link {
-                border-bottom: 2px solid #f2f2f2;
+                border-bottom: 2px solid #e3d4ad;
                 border-radius: 0;
                 padding: 0;
             }
@@ -103,7 +103,7 @@ form {
 }
 .style-one { 
     background-color: #a71930;
-    color: #f2f2f2; 
+    color: #e3d4ad; 
     a { 
         background-color: #f2f2f2;
         color: #a71930; 

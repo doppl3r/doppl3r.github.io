@@ -23,13 +23,13 @@ section {
     right: 0; }
     section .bottom a, section .bottom a:hover {
       background-color: transparent;
-      color: #f2f2f2;
+      color: #e3d4ad;
       font-size: inherit; }
       section .bottom a.btn, section .bottom a:hover.btn {
-        border: 2px solid #f2f2f2;
+        border: 2px solid #e3d4ad;
         padding: 0 12px; }
       section .bottom a.link, section .bottom a:hover.link {
-        border-bottom: 2px solid #f2f2f2;
+        border-bottom: 2px solid #e3d4ad;
         border-radius: 0;
         padding: 0; }
 
@@ -95,7 +95,7 @@ form {
 
 .style-one {
   background-color: #a71930;
-  color: #f2f2f2; }
+  color: #e3d4ad; }
   .style-one a {
     background-color: #f2f2f2;
     color: #a71930; }
