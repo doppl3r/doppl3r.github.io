@@ -34,7 +34,7 @@ p, p > a, p > a:hover {
   font-size: 24px;
   margin: 0 auto;
   max-width: 780px;
-  padding: 0; }
+  padding: 24px 0 0; }
 
 a, a:hover, button {
   border: none;
@@ -75,18 +75,27 @@ form {
     width: 100%; }
 
 .style-one {
-  background-color: #1290bf;
+  background-color: #a71930;
   color: #f2f2f2; }
   .style-one a {
     background-color: #f2f2f2;
-    color: #1290bf; }
+    color: #a71930; }
+    .style-one a.small {
+      background-color: transparent;
+      padding: 12px 36px;
+      font-size: 12px;
+      border: 1px solid #f2f2f2;
+      color: #f2f2f2;
+      position: absolute;
+      bottom: 12px;
+      right: 12px; }
 
 .style-two {
   background-color: #f2f2f2;
-  color: #1290bf; }
+  color: #a71930; }
   .style-two a.button, .style-two a.button:hover,
   .style-two button, .style-two button:hover {
-    background-color: #1290bf;
+    background-color: #a71930;
     color: #f2f2f2; }
 
 .style-three {
@@ -132,7 +141,7 @@ form {
 
 .modal .modal-content .modal-body {
   background-color: #f2f2f2;
-  color: #1290bf;
+  color: #a71930;
   padding: 32px; }
 
 .modal .close {
