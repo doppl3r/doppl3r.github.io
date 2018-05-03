@@ -99,8 +99,22 @@ form {
     width: 100%; }
 
 .style-one {
-  background-color: #a71930;
   color: #e3d4ad; }
+  .style-one:before, .style-one:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0; }
+  .style-one:before {
+    background-color: #a71930;
+    z-index: -2; }
+  .style-one:after {
+    background-image: url("../img/field.jpg");
+    background-size: cover;
+    opacity: 0.1;
+    z-index: -1; }
   .style-one a {
     background-color: #f2f2f2;
     color: #a71930; }
