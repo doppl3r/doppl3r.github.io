@@ -57,7 +57,8 @@
                 var name = getParameterByName('name', url);
                 if (name == null) name = $('#name').html();
                 var newName = window.prompt("Name:", name);
-                    location.replace(cleanUrl + "?name=" + newName); 
+                newName = newName != null ? newName : name;
+                location.replace(cleanUrl + "?name=" + newName); 
             }
             var $resize = $(window).resize(function () { fullscreen(null); }); //Listen to Window Resize
             $('[href*="#"]').click(function () { var href = $.attr(this, 'href'); $('html, body').animate({ scrollTop: $(href).offset().top }, 500, function () {}); return false;});
