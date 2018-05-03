@@ -22,7 +22,7 @@
                     <p>Please please please please please please please please please please please please please please please please please please please please please please please please please please please please do whatever it takes to keep the DBacks in Arizona!!!</p>
                     <p>Love,</p>
                     <p><em id="name">Your DBacks fan</em></p>
-                    <a class="small" onclick="editUrl()">edit</a>
+                    <p class="bottom"><a class="btn" onclick="editUrl()">edit</a> your name and email this link to <a id="email" class="link" href="mailto:stadiumcomments@mail.maricopa.gov">stadiumcomments@mail.maricopa.gov</a></p>
                 </hgroup>
             </article>
         </section>
@@ -38,7 +38,9 @@
 
                 var url = window.location.href;
                 var name = getParameterByName('name', url);
-                if (name != null) $('#name').html(name);
+                if (name == null) name = $('#name').html();
+                $('#name').html(name);
+                $('#email').attr("href", "mailto:stadiumcomments@mail.maricopa.gov&subject=Request to Keep DBacks in AZ&body=Please help us keep the DBacks in AZ!%0D%0A%0D%0ALink: "+window.location.href+"%0D%0A%0D%0ASincerly,%0D%0A"+getParameterByName('name', window.location.href));
             });
             function fullscreen(name) {
                 $(name).addClass('fullscreen');

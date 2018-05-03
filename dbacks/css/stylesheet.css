@@ -13,6 +13,25 @@ section {
     font-size: 48px;
     padding: 36px 12px;
     vertical-align: middle; }
+  section .bottom {
+    bottom: 12px;
+    font-size: 16px;
+    left: 0;
+    line-height: 24px;
+    padding: 0;
+    position: absolute;
+    right: 0; }
+    section .bottom a, section .bottom a:hover {
+      background-color: transparent;
+      color: #f2f2f2;
+      font-size: inherit; }
+      section .bottom a.btn, section .bottom a:hover.btn {
+        border: 2px solid #f2f2f2;
+        padding: 0 12px; }
+      section .bottom a.link, section .bottom a:hover.link {
+        border-bottom: 2px solid #f2f2f2;
+        border-radius: 0;
+        padding: 0; }
 
 article {
   display: table-cell;
@@ -80,15 +99,6 @@ form {
   .style-one a {
     background-color: #f2f2f2;
     color: #a71930; }
-    .style-one a.small {
-      background-color: transparent;
-      padding: 12px 36px;
-      font-size: 12px;
-      border: 1px solid #f2f2f2;
-      color: #f2f2f2;
-      position: absolute;
-      bottom: 12px;
-      right: 12px; }
 
 .style-two {
   background-color: #f2f2f2;
