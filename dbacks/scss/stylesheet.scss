@@ -30,6 +30,9 @@ section {
             &.btn {
                 border: 2px solid #e3d4ad;
                 padding: 0 12px;
+                animation: 1s ease-in-out throb 3;
+
+                &:hover { animation: initial; }
             }
             &.link {
                 border-bottom: 2px solid #e3d4ad;
@@ -120,9 +123,12 @@ form {
     }
     &:before { background-color: #a71930; z-index: -2; }
     &:after {
-        background-image: url('../img/field.jpg');
+        background-image: url(../img/field.jpg);
         background-size: cover;
-        opacity: 0.1;
+        background-blend-mode: multiply;
+        background-color: #a71930;
+        background-position: center;
+        opacity: 0.5;
         z-index: -1;
     }
     a { 
@@ -240,4 +246,10 @@ form {
          url('../fonts/GothamHTF-Light.woff') format('woff'),
          url('../fonts/GothamHTF-Light.ttf') format('truetype'),
          url('../fonts/GothamHTF-Light.svg') format('svg');
+}
+
+@keyframes throb { 
+    0% { transform: scale(1); }  
+	50% { transform: scale(0.8); } 
+	100% { transform: scale(1); } 
 }
