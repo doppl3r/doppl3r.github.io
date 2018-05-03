@@ -58,11 +58,9 @@
                 var url = window.location.href;
                 var cleanUrl = url.substring(0, url.indexOf('?'));
                 var name = getParameterByName('name', url);
-                if (name != null){
-                    $('#name').html(name);
-                    var newName = window.prompt("Name:", name);
+                if (name == null) name = $('#name').html();
+                var newName = window.prompt("Name:", name);
                     location.replace(cleanUrl + "?name=" + newName); 
-                }
             }
             var $resize = $(window).resize(function () { fullscreen(null); }); //Listen to Window Resize
             $('[href*="#"]').click(function () { var href = $.attr(this, 'href'); $('html, body').animate({ scrollTop: $(href).offset().top }, 500, function () {}); return false;});
