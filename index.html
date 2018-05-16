@@ -259,31 +259,6 @@
                 </hgroup>
             </article>
         </section>
-
-        <amp-analytics type="googleanalytics">
-            <script type="application/json">
-                {
-                "vars": {
-                    "account": "UA-73959203-1"
-                },
-                "triggers": {
-                    "trackPageview": {
-                            "on": "visible",
-                            "request": "pageview"
-                        }
-                    },
-                    "outboundLinks": {
-                        "on": "click",
-                        "selector": "a",
-                        "request": "event",
-                        "vars": {
-                            "eventCategory": "outbound",
-                            "eventAction": "click",
-                            "eventLabel": "${outboundLink}"
-                        }
-                    }
-                }
-            </script>
-        </amp-analytics>
+        <amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-NTQGNZW&gtm.url=SOURCE_URL" data-credentials="include"></amp-analytics>
 	</body>
 </html>
